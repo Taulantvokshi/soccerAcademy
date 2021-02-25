@@ -1,6 +1,5 @@
 .coaching {
   opacity: 0;
-  grid-column: center-start / center-end;
   background-color: #ffffff;
   min-height: 50rem;
   margin-top: -15rem;
@@ -85,14 +84,7 @@
   }
   &-more {
     grid-column: 1/-1;
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--title-color);
-    border-bottom: 5px solid var(--underline-color);
     width: 15rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 

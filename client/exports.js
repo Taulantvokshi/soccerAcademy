@@ -1,6 +1,7 @@
 export { default as App } from './App';
 export { default as Header } from './components/Header';
 export { default as Routes } from './components/Routes';
+export { default as Footer } from './components/Footer';
 
 //HOME PAGE
 export { default as HomePage } from './components/home-page/index';

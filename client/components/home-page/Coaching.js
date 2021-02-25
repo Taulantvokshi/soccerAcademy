@@ -14,7 +14,7 @@ const SingleItem = (image, name, team, position) => {
           <Twitter />
         </div>
       </div>
-      <div className="item-grid-more">
+      <div className="item-grid-more underline">
         <div>LEARN MORE</div>
         <Arrow />
       </div>

@@ -1,5 +1,21 @@
 .traning {
-  height: 10rem;
-  grid-column: center-start / center-end;
-  background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  &_content {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 240px));
+    justify-content: center;
+    row-gap: 5rem;
+    column-gap: 5rem;
+
+    img {
+      width: 24rem;
+    }
+  }
+  &_more {
+    margin-top: 5rem;
+    width: 12rem;
+    align-self: center;
+  }
 }

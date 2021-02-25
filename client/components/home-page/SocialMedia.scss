@@ -1,5 +1,24 @@
 .socialMedia {
-  height: 10rem;
-  grid-column: center-start / center-end;
-  background-color: darkkhaki;
+  &_content {
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 5rem;
+    justify-content: center;
+
+    &-fb,
+    &-in {
+      width: 40rem;
+      height: 20rem;
+      background-color: white;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: var(--title-color);
+      font-weight: 600;
+    }
+  }
 }

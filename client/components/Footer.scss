@@ -1,0 +1,93 @@
+.footer {
+  position: relative;
+  margin-top: 10rem;
+  grid-column: full-start / full-end;
+  grid-row: 3/4;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 73%,
+    rgba(14, 40, 93, 1) 75%,
+    rgba(14, 40, 93, 1) 100%
+  );
+
+  &_logo {
+    position: absolute;
+    top: -9rem;
+    left: 21rem;
+  }
+  &_info {
+    color: white;
+    padding: 1rem;
+    height: 45rem;
+    width: 40rem;
+
+    position: absolute;
+    top: 10rem;
+    left: 18rem;
+    margin-top: 3rem;
+
+    display: grid;
+    row-gap: 4rem;
+    align-items: center;
+    align-content: start;
+    justify-content: center;
+
+    &-title {
+      font-weight: 600;
+      font-size: 3.4rem;
+      margin-bottom: 1rem;
+    }
+    &-inf {
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 2rem;
+      justify-items: center;
+      justify-content: start;
+
+      &--logo {
+        width: 2.2rem;
+      }
+
+      &--text {
+        font-weight: 300;
+        font-size: 1.7rem;
+        display: flex;
+        align-items: center;
+      }
+      &--button {
+        font-size: 1.6rem;
+        padding: 0.7rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color: #c81c28;
+        border-radius: 20px;
+        margin-top: 3rem;
+      }
+    }
+  }
+  &_player {
+    width: 42rem;
+    margin-top: -45rem;
+    position: absolute;
+    top: 30rem;
+    right: 25rem;
+  }
+
+  &_end {
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    background-color: var(--title-color);
+    z-index: 100;
+    bottom: 0;
+    padding: 2rem;
+    &--container {
+      width: 12rem;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 19rem;
+      margin-top: 2rem;
+    }
+  }
+}

@@ -1,5 +1,17 @@
 .students {
   grid-column: center-start / center-end;
-  height: 10rem;
-  background-color: tomato;
+  // &_title {
+  // }
+  &_content {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 330px));
+    justify-content: space-evenly;
+  }
+}
+
+.academy-grid {
+  img {
+    width: 33rem;
+  }
 }
