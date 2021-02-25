@@ -1,0 +1,69 @@
+.header {
+  grid-column: full-start / full-end;
+  position: relative;
+  opacity: 0;
+  overflow: hidden;
+  &_navbar {
+    position: absolute;
+    width: 55rem;
+    height: 5rem;
+    top: 2rem;
+    right: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &-items {
+      color: white;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+  }
+  &_logo {
+    position: absolute;
+    top: 2rem;
+    left: 12rem;
+    img {
+      width: 20rem;
+    }
+  }
+  &_display {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    min-height: 20rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &-info {
+      color: #ffffff;
+      display: grid;
+      row-gap: 2rem;
+      &--title {
+        font-size: 4rem;
+        font-weight: 300;
+      }
+      &--msg {
+        font-size: 4rem;
+        font-weight: 600;
+      }
+      &--btn {
+        font-size: 1.9rem;
+        width: 20rem;
+        margin-top: 1rem;
+      }
+    }
+    &-player {
+      img {
+        width: 29rem;
+        margin-top: -15rem;
+      }
+    }
+  }
+}
+
+.nav-item-4 {
+  width: 13rem;
+}
