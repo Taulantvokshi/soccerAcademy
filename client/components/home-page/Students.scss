@@ -1,12 +1,12 @@
 .students {
   grid-column: center-start / center-end;
-  // &_title {
-  // }
+
   &_content {
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min-content, 330px));
     justify-content: space-evenly;
+    row-gap: 5rem;
   }
 }
 

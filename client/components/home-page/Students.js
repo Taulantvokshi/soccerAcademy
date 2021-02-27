@@ -12,7 +12,7 @@ const SingleItem = () => {
 const Students = () => {
   return (
     <div className="students margin-top-lg">
-      <div className="students_title section-title">Students at academy</div>
+      <div className="section-title">Students at academy</div>
       <div className="students_content">
         <SingleItem />
         <SingleItem />

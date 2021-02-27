@@ -39,7 +39,12 @@ const Coaching = () => {
           <span style={{ color: '#C81C28' }}>Ansi Agolli </span> and{' '}
           <span style={{ color: '#C81C28' }}>Bledi Bardic. </span>
         </div>
+        <div id="coaching_info-hiddenText" className="underline">
+          <div>Read more about us</div>
+          <Arrow />
+        </div>
       </div>
+      <div className="coaching_info-hiddenTitle">Coaching Leadership</div>
       <div className="coaching_stories">
         <SingleItem />
         <SingleItem />

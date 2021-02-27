@@ -11,15 +11,38 @@
 
 .training-grid {
   width: 400px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &_image {
     img {
-      width: 370px;
+      width: 400px;
     }
   }
 
   &_button {
     font-size: 2rem;
     width: 17rem;
+    justify-self: start;
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .programs {
+    &_content {
+      grid-template-columns: repeat(auto-fit, minmax(min-content, 350px));
+      padding: 0;
+    }
+  }
+  .training-grid {
+    width: 350px;
+
+    &_image {
+      img {
+        width: 350px;
+      }
+    }
   }
 }

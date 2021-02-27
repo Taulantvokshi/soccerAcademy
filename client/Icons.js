@@ -14,13 +14,15 @@ export const HeaderIlustaration = ({ width = '900px' }) => {
           transform="translate(-2 28.952)"
         />
         <path
+          // opacity="0.7"
           fill="#fff"
           d="M0,3.793S103.94,40.8,638.234,10.545s728.792-6.752,728.792-6.752V77.914L0,78.328Z"
-          transform="translate(-2 95.952)"
+          transform="translate(-2 93.952)"
+          // transform="translate(-2 120)"
         />
         <path
           fill="#0e285d"
-          // opacity="0.4"
+          // opacity="0.7"
           d="M0,0S287.407,38.155,688.858-9.135,1368,0,1368,0V614.567H0Z"
           transform="translate(-2 160.682)"
         />

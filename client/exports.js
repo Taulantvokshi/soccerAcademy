@@ -3,6 +3,8 @@ export { default as Header } from './components/Header';
 export { default as Routes } from './components/Routes';
 export { default as Footer } from './components/Footer';
 
+export { default as MobileNav } from './components/MobileHeader';
+
 //HOME PAGE
 export { default as HomePage } from './components/home-page/index';
 export { default as Coaching } from './components/home-page/Coaching';

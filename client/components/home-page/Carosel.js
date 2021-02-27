@@ -48,11 +48,13 @@ const Carosel = () => {
             );
           })}
         </div>
-        <div className="goLeft" onClick={goLeft}>
-          <img src="images/left-arrow.svg" />
-        </div>
-        <div className="goRight" onClick={goRight}>
-          <img src="images/right-arrow.svg" />
+        <div className="buttons">
+          <div className="goLeft" onClick={goLeft}>
+            <img src="images/left-arrow.svg" />
+          </div>
+          <div className="goRight" onClick={goRight}>
+            <img src="images/right-arrow.svg" />
+          </div>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ const App = () => {
     <div className="App">
       <Header />
       <Routes />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

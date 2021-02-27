@@ -21,7 +21,9 @@ const SingleItemS = ({ imageUrl, imageText }) => {
 const Programs = () => {
   return (
     <section className="programs margin-top-lg">
-      <div className="section-title">Our soccer training programs</div>
+      <div className="section-title programs--title">
+        Our soccer training programs
+      </div>
       <div className="programs_content">
         <SingleItemS />
         <SingleItemS />

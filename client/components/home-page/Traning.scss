@@ -19,3 +19,18 @@
     align-self: center;
   }
 }
+
+@media only screen and (max-width: 560px) {
+  .traning {
+    &_content {
+      grid-template-columns: repeat(auto-fit, minmax(min-content, 150px));
+      row-gap: 3rem;
+      column-gap: 3rem;
+      img {
+        width: 15rem;
+      }
+    }
+    &_more {
+    }
+  }
+}
