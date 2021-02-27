@@ -1,0 +1,87 @@
+.forms {
+  padding: 1rem;
+  margin-top: -5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 6rem;
+  @media only screen and (max-width: 683px) {
+    margin-top: 4rem;
+    padding: 0rem;
+  }
+
+  &_player {
+    display: grid;
+    row-gap: 4rem;
+    &-inputs {
+      display: flex;
+      flex-direction: column;
+      textarea {
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+
+  &_address {
+    display: grid;
+    row-gap: 2rem;
+  }
+  &_terms {
+    width: 55rem;
+    @media only screen and (max-width: 600px) {
+      width: 35rem;
+    }
+    &-policy {
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    &-text {
+      font-size: 1.3rem;
+    }
+  }
+  &_agreement {
+    display: flex;
+    &-icon {
+      cursor: pointer;
+      margin-right: 1rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 100%;
+      border: 3px solid var(--title-color);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 100%;
+        background-color: var(--underline-color);
+      }
+    }
+    &-text {
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+      span {
+        color: var(--underline-color);
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &_submit {
+    width: 15rem;
+    text-align: center;
+  }
+}
+
+.form-label {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  span {
+    color: var(--underline-color);
+  }
+}

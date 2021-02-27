@@ -1,12 +1,15 @@
-import React from 'react';
-import { Header, Routes, Footer } from './exports';
-import './App.scss';
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { Header, Routes, Footer, RegisterHeader } from "./exports";
+import "./App.scss";
 const App = () => {
+  let location = useLocation();
+  useEffect(() => {}, [location]);
   return (
     <div className="App">
-      <Header />
+      {location.pathname === "/" ? <Header /> : <RegisterHeader />}
       <Routes />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

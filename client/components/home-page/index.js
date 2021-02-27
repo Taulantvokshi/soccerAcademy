@@ -1,5 +1,5 @@
-import React from 'react';
-import './index.scss';
+import React from "react";
+import "./index.scss";
 import {
   Coaching,
   Programs,
@@ -7,7 +7,7 @@ import {
   Traning,
   Carosel,
   SocialMedia,
-} from '../../exports';
+} from "../../exports";
 const HomePage = () => {
   return (
     <div className="homepage">
@@ -17,6 +17,9 @@ const HomePage = () => {
       <Traning />
       <Carosel />
       <SocialMedia />
+      <div className="logo_component">
+        <img className="footer_logo" src="images/logo.png" />
+      </div>
     </div>
   );
 };

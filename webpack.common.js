@@ -1,9 +1,9 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 
 module.exports = {
-  entry: ['@babel/polyfill', './client/index.js'], // assumes your entry point is the index.js in the root of your project folder
+  entry: ["@babel/polyfill", "./client/index.js"], // assumes your entry point is the index.js in the root of your project folder
   devtool: false,
   module: {
     rules: [
@@ -11,16 +11,16 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
       },
     ],
   },
 
   plugins: [
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
     new HtmlWebpackPlugin({
-      template: './client/template.html',
+      template: "./client/template.html",
     }),
   ],
 };

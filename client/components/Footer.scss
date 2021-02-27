@@ -3,13 +3,14 @@
   margin-top: 10rem;
   grid-column: full-start / full-end;
   grid-row: 3/4;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 73%,
-    rgba(14, 40, 93, 1) 75%,
-    rgba(14, 40, 93, 1) 100%
-  );
+
+  @media only screen and (max-width: 1422px) {
+    overflow: hidden;
+  }
+
+  &_main {
+    min-width: 100vw !important;
+  }
 
   &_logo {
     position: absolute;
@@ -32,6 +33,13 @@
     align-items: center;
     align-content: start;
     justify-content: center;
+    @media only screen and (max-width: 986px) {
+      left: 7rem;
+    }
+    @media only screen and (max-width: 500px) {
+      left: 0;
+      padding: 0;
+    }
 
     &-title {
       font-weight: 600;
@@ -44,6 +52,9 @@
       column-gap: 2rem;
       justify-items: center;
       justify-content: start;
+      @media only screen and (max-width: 1422px) {
+        margin-bottom: -1rem;
+      }
 
       &--logo {
         width: 2.2rem;
@@ -54,15 +65,9 @@
         font-size: 1.7rem;
         display: flex;
         align-items: center;
-      }
-      &--button {
-        font-size: 1.6rem;
-        padding: 0.7rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        background-color: #c81c28;
-        border-radius: 20px;
-        margin-top: 1rem;
+        @media only screen and (max-width: 500px) {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -72,6 +77,9 @@
     position: absolute;
     top: 30rem;
     right: 25rem;
+    @media only screen and (max-width: 1422px) {
+      display: none;
+    }
   }
 
   &_end {
@@ -82,6 +90,11 @@
     z-index: 100;
     bottom: 0;
     padding: 2rem;
+    @media only screen and (max-width: 500px) {
+      left: -18rem;
+      border-top: 1px solid grey;
+      width: 90rem;
+    }
     &--container {
       width: 12rem;
       display: flex;
@@ -90,4 +103,17 @@
       margin-top: 2rem;
     }
   }
+}
+.logo_component {
+  grid-column: full-start / full-end;
+  grid-row: 4/5;
+  height: 4rem;
+  position: relative;
+}
+
+.footer_logo {
+  z-index: 200;
+  position: absolute;
+  top: 5rem;
+  left: 7rem;
 }

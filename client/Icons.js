@@ -1,6 +1,52 @@
-import React from 'react';
+import React from "react";
+export const MobileRegisterIlustration = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="375.974"
+      height="307.462"
+      viewBox="0 0 375.974 307.462"
+    >
+      <rect fill="#c81c28" width="375" height="116" />
+      <path
+        fill="#fff"
+        d="M0,3.793S28.513,40.8,175.079,10.545,375,3.793,375,3.793V77.914L0,78.328Z"
+        transform="translate(0 67)"
+      />
+      <path
+        fill="#0d1e41"
+        d="M0,11.184s31.36,37.193,176.053,3.455S375.974,9.83,375.974,9.83v148s-79.828,81.362-185.659,52.781S0,231.462,0,231.462Z"
+        transform="translate(0 76)"
+      />
+    </svg>
+  );
+};
 
-export const HeaderIlustaration = ({ width = '900px' }) => {
+export const RegisterIlustration = ({ width = "900px" }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1368"
+      height="464.036"
+      viewBox="0 0 1368 464.036"
+    >
+      <g transform="translate(0 28.952)">
+        <path fill="#c81c28" d="M0-28.952H1367V116H0Z" />
+        <path
+          fill="#fff"
+          d="M0,3.793S103.94,40.8,638.234,10.545s728.792-6.752,728.792-6.752V77.914L0,78.328Z"
+          transform="translate(0 67)"
+        />
+        <path
+          fill="#0d1e41"
+          d="M0,11.184s114.1,37.193,640.578,3.455S1368,9.83,1368,9.83v207.04s-122.883,64.755-649.955,0S0,346.084,0,346.084Z"
+          transform="translate(0 89)"
+        />
+      </g>
+    </svg>
+  );
+};
+export const HeaderIlustaration = ({ width = "900px" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +76,7 @@ export const HeaderIlustaration = ({ width = '900px' }) => {
     </svg>
   );
 };
-export const Arrow = ({ size = '15px' }) => {
+export const Arrow = ({ size = "15px" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +93,7 @@ export const Arrow = ({ size = '15px' }) => {
   );
 };
 
-export const Instagram = ({ size = '30px' }) => {
+export const Instagram = ({ size = "30px" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +109,7 @@ export const Instagram = ({ size = '30px' }) => {
     </svg>
   );
 };
-export const Twitter = ({ size = '30px' }) => {
+export const Twitter = ({ size = "30px" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +125,22 @@ export const Twitter = ({ size = '30px' }) => {
         strokeLinejoin="round"
         d="M34.5,4.5a16.35,16.35,0,0,1-4.71,2.3A6.72,6.72,0,0,0,18,11.295v1.5A15.99,15.99,0,0,1,4.5,6s-6,13.5,7.5,19.5a17.46,17.46,0,0,1-10.5,3c13.5,7.5,30,0,30-17.25A6.75,6.75,0,0,0,31.38,10,11.58,11.58,0,0,0,34.5,4.5Z"
         transform="translate(0 -2.868)"
+      />
+    </svg>
+  );
+};
+export const ArrowDown = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="13.782"
+      height="7.88"
+      viewBox="0 0 13.782 7.88"
+    >
+      <path
+        fill="#0e285d"
+        d="M13.081,16.751l5.211-5.215a.981.981,0,0,1,1.391,0,.993.993,0,0,1,0,1.4l-5.9,5.909a.983.983,0,0,1-1.358.029L6.475,12.935a.985.985,0,0,1,1.391-1.4Z"
+        transform="translate(-6.188 -11.246)"
       />
     </svg>
   );

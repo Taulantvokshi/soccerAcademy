@@ -1,9 +1,18 @@
 .m_nav {
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 300;
+  &_logos {
+    opacity: 0;
+    position: absolute;
+    width: 13rem;
+    left: 3rem;
+    top: 0.5rem;
+    transform: translateY(-16rem);
+  }
+
   &_background {
     position: fixed;
     right: 2rem;
@@ -16,6 +25,7 @@
     z-index: 1000;
   }
   &_register {
+    z-index: 2000;
     position: absolute;
     font-size: 1.5rem;
     padding: 1rem;
@@ -59,7 +69,7 @@
       &::before,
       &::after {
         transition: all 0.3s;
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
       }
@@ -94,38 +104,38 @@
     height: 100vh;
     width: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
     opacity: 0;
     visibility: 0;
     transition: width 0.2s 0.2s;
     z-index: 3000;
 
     &-list {
-      margin-top: -15rem;
-      padding: 2rem;
+      margin-top: 16rem;
+      width: 100vw;
       opacity: 0;
       transition: all 0s 0.2s;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
 
       &-li {
         cursor: pointer;
-        &:first-child {
-          margin-top: 1rem;
-        }
-
-        color: grey;
+        width: 100vw;
+        color: white;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        width: 20rem;
-        height: 5.5rem;
-        margin-top: 10px;
+        height: 5rem;
+        border-bottom: 1px solid #607295;
+        border-top: 1px solid #607295;
         text-decoration: none;
-        font-size: 2.6rem;
+        font-size: 2rem;
+        p {
+          margin-left: 3rem;
+        }
       }
     }
   }
@@ -134,4 +144,41 @@
   background-color: rgba(crimson, 0.6);
   color: white;
   border-radius: 7px;
+}
+
+.mob_info {
+  position: absolute;
+  color: white;
+  margin-top: 35rem;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2rem;
+  &-contact {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  &-icons {
+    display: flex;
+    margin-bottom: 2rem;
+    &-icon {
+      margin-right: 1rem;
+      width: 1.5rem;
+    }
+    &-text {
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.special-case {
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 3rem;
+    margin-top: 2rem;
+  }
 }

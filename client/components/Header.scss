@@ -4,14 +4,9 @@
   position: relative;
   opacity: 0;
   overflow: hidden;
-  // background-image: url('https://wwmt.com/resources/media/3621b7b3-8e3e-4167-9e38-da94fa9ca069-large16x9_AP20190736080736.jpg?1594337025526');
-  object-fit: cover;
 
   svg {
     min-width: 100vw !important;
-    @media only screen and (max-width: 457px) {
-      // opacity: 0.4;
-    }
   }
   &_navbar {
     position: absolute;
@@ -35,6 +30,9 @@
     position: absolute;
     top: 2rem;
     left: 12rem;
+    // z-index: 2000;
+    transform: translateY(-16rem);
+    opacity: 0;
 
     @media only screen and (max-width: 778px) {
       left: 8rem;

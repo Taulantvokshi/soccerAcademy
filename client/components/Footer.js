@@ -1,11 +1,11 @@
-import React from 'react';
-import './Footer.scss';
+import React from "react";
+import "./Footer.scss";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <img style={{ width: window.innerWidth }} src="images/footer-image.svg" />
-      <img className="footer_logo" src="images/logo.png" />
+      <img className="footer_main" src="images/footer-image.svg" />
+
       <div className="footer_info">
         <div className="footer_info-title">Contact us</div>
         <div className="footer_info-inf">
@@ -21,7 +21,6 @@ const Footer = () => {
             registration@ab7socceracademy.com
           </div>
         </div>
-
         <div className="footer_info-inf">
           <img className="footer_info-inf--logo" src="images/cell.svg" />
           <div className="footer_info-inf--text">(929) 503-1788</div>
@@ -33,7 +32,7 @@ const Footer = () => {
         </div>
 
         <div className="footer_info-inf">
-          <div className="footer_info-inf--button">Register Today</div>
+          <div className="footer_info-inf--button sec-btn">Register Today</div>
         </div>
       </div>
       <img className="footer_player" src="./images/silo-2@2x.png" />
