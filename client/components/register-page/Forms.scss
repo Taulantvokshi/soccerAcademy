@@ -74,6 +74,15 @@
   &_submit {
     width: 15rem;
     text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      transform: scale(0.8);
+    }
   }
 }
 

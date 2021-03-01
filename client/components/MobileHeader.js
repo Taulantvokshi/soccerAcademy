@@ -44,7 +44,9 @@ const MobileNav = () => {
         <span className="m_nav_button-icon" />
       </div>
 
-      <div className="m_nav_register">REGISTER</div>
+      <Link to="/register" className="m_nav_register">
+        REGISTER
+      </Link>
 
       <div style={background} className="m_nav_background" />
 
