@@ -61,6 +61,8 @@
       }
 
       &--text {
+        color: white;
+        text-decoration: none;
         font-weight: 300;
         font-size: 1.7rem;
         display: flex;
@@ -90,9 +92,9 @@
     z-index: 100;
     bottom: 0;
     padding: 2rem;
+    border-top: 1px solid var(--background-color);
     @media only screen and (max-width: 500px) {
       left: -18rem;
-      border-top: 1px solid grey;
       width: 90rem;
     }
     &--container {
@@ -100,12 +102,11 @@
       display: flex;
       justify-content: space-between;
       margin-left: 19rem;
-      margin-top: 2rem;
+      margin-top: 0.5rem;
     }
   }
 }
 .logo_component {
-  grid-column: full-start / full-end;
   grid-row: 4/5;
   height: 4rem;
   position: relative;
@@ -115,5 +116,9 @@
   z-index: 200;
   position: absolute;
   top: 5rem;
-  left: 7rem;
+  left: -18rem;
+  width: 17rem;
+  @media only screen and (max-width: 1440px) {
+    left: 6rem;
+  }
 }

@@ -3,7 +3,7 @@
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: 300;
+  // z-index: 300;
   &_logos {
     opacity: 0;
     position: absolute;
@@ -25,7 +25,7 @@
     z-index: 1000;
   }
   &_register {
-    z-index: 2000;
+    z-index: 5000;
     position: absolute;
     font-size: 1.5rem;
     padding: 1rem;
@@ -39,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     @media only screen and (max-width: 380px) {
       right: 8.5rem;
     }
@@ -170,6 +171,8 @@
       font-size: 1.3rem;
       display: flex;
       align-items: center;
+      text-decoration: none;
+      color: white;
     }
   }
 }

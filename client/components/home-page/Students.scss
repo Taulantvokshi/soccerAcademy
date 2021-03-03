@@ -1,4 +1,6 @@
 .students {
+  opacity: 0;
+  transform: translateX(-5rem);
   grid-column: center-start / center-end;
 
   &_content {
@@ -11,7 +13,16 @@
 }
 
 .academy-grid {
+  position: relative;
+  cursor: pointer;
   img {
     width: 33rem;
+    filter: brightness(70%);
+  }
+  &-hidden {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transform: translate(50% 50%);
   }
 }

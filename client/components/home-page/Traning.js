@@ -1,19 +1,88 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Traning.scss";
 import { Arrow } from "../../Icons";
-const SingleItem = () => {
-  return (
-    <img src="https://static01.nyt.com/images/2020/09/25/sports/25soccer-nationalWEB1/merlin_177451008_91c7b66d-3c8a-4963-896e-54280f374b6d-articleLarge.jpg?quality=75&auto=webp&disable=upscale" />
-  );
+
+const imageData = [
+  {
+    id: 1,
+    image: "images/Group 3385@2x.jpg",
+  },
+  {
+    id: 2,
+    image: "images/Group 3386@2x.jpg",
+  },
+  {
+    id: 3,
+    image: "images/Group 3387@2x.jpg",
+  },
+  {
+    id: 4,
+    image: "images/Group 3388@2x.jpg",
+  },
+  {
+    id: 5,
+    image: "images/Group 3389@2x.jpg",
+  },
+  {
+    id: 6,
+    image: "images/Group 3390@2x.jpg",
+  },
+  {
+    id: 7,
+    image: "images/Group 3391@2x.jpg",
+  },
+  {
+    id: 8,
+    image: "images/Group 3392@2x.jpg",
+  },
+  {
+    id: 9,
+    image: "images/Group 3393@2x.jpg",
+  },
+  {
+    id: 10,
+    image: "images/Group 3394@2x.jpg",
+  },
+  {
+    id: 11,
+    image: "images/Group 3395@2x.jpg",
+  },
+  {
+    id: 12,
+    image: "images/Group 3396@2x.jpg",
+  },
+];
+
+const SingleItem = ({ imageUrl }) => {
+  return <img src={imageUrl} />;
 };
 
 const Traning = () => {
+  useEffect(() => {
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: `.traning_content`,
+
+          start: "top 80%",
+          end: "bottom 80%",
+
+          //   scrub: true,
+          //events     //onEnter onLeave onEterBack onLeaveBack
+          toggleActions: "play none none none",
+          //options play, pause, resume,reset, restart, complete, reverse, none
+        },
+      })
+      .to(`.traning_content`, {
+        opacity: 1,
+      });
+  }, []);
   return (
     <div className="traning margin-top-lg">
       <div className="traning_title section-title">Training day</div>
       <div className="traning_content">
-        {Array.from("............").map((item, index) => {
-          return <SingleItem key={index} />;
+        {imageData.map((item) => {
+          return <SingleItem key={item.id} imageUrl={item.image} />;
         })}
       </div>
 

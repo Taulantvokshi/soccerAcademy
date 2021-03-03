@@ -18,7 +18,7 @@ const HomePage = () => {
       <Carosel />
       <SocialMedia />
       <div className="logo_component">
-        <img className="footer_logo" src="images/logo.png" />
+        <img className="footer_logo" src="images/logo2x.png" />
       </div>
     </div>
   );

@@ -27,9 +27,14 @@ const Header = () => {
             Our goal is to transmit <br /> our experience to youth soccer
             players.
           </p>
-          <div className="prim-btn header_display-info--btn">
+          <a
+            href="https://macronstorect.tuosystems.com/stores/ab7"
+            className="prim-btn header_display-info--btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Shop for gears
-          </div>
+          </a>
         </div>
         <div className="header_display-player">
           <img src="images/silo-1@2x.png" />

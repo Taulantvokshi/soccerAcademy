@@ -1,11 +1,12 @@
 /* eslint-disable complexity */
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const MobileNav = () => {
   const input = useRef();
   const [clicked, setClicked] = useState(false);
   const [animation, setAnimation] = useState();
+  const location = useLocation();
 
   useEffect(() => {
     const animate = gsap.timeline().to(".m_nav_logos", { opacity: 1, y: 0 });
@@ -68,31 +69,55 @@ const MobileNav = () => {
           <div className="mob_info-contact">Contact us</div>
           <div className="mob_info-icons">
             <img className="mob_info-icons-icon" src="images/location.svg" />
-            <div className="mob_info-icons-text">
+            <a
+              href="https://www.google.com/maps/place/57+Barbara+St,+Staten+Island,+NY+10306/@40.5690511,-74.1330047,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24bfb43871ea9:0xa30a2d2b2a3d42f5!8m2!3d40.569047!4d-74.130816"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mob_info-icons-text"
+            >
               57 Barbara Street Staten Island, NY 10306
-            </div>
+            </a>
           </div>
 
           <div className="mob_info-icons">
             <img className="mob_info-icons-icon" src="images/mail.svg" />
-            <div className="mob_info-icons-text">
+            <a
+              href="mailto:ansi@ab7socceracademy.com"
+              className="mob_info-icons-text"
+            >
               registration@ab7socceracademy.com
-            </div>
+            </a>
           </div>
 
           <div className="mob_info-icons">
             <img className="mob_info-icons-icon" src="images/cell.svg" />
-            <div className="mob_info-icons-text">(929) 503-1788</div>
+            <a href="tel:9295031788" className="mob_info-icons-text">
+              (929) 503-1788
+            </a>
           </div>
 
           <div className="mob_info-icons">
             <img className="mob_info-icons-icon" src="images/cell.svg" />
-            <div className="mob_info-icons-text">(347) 990-5252</div>
+            <a href="tel:3479905252" className="mob_info-icons-text">
+              (347) 990-5252
+            </a>
           </div>
 
           <div className="mob_info-icons special-case">
-            <img src="images/ig-icon.svg" />
-            <img src="images/fb-icon.svg" />
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/ab7socceracademy/?igshid=ai2kbjypxyc3"
+            >
+              <img src="images/ig-icon.svg" />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/AB7SoccerAcademy-104734771509976"
+            >
+              <img src="images/fb-icon.svg" />
+            </a>
           </div>
         </div>
       </div>

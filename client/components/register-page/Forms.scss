@@ -36,6 +36,31 @@
       font-weight: 600;
       font-size: 1.5rem;
       margin-bottom: 1rem;
+      &-accademy {
+        &-title {
+          font-size: 2rem;
+          font-weight: 600;
+          color: var(--title-color);
+          margin-bottom: 1rem;
+        }
+        &-text {
+          font-size: 1.5rem;
+          color: #383738;
+        }
+      }
+      &-covid {
+        margin-top: 2rem;
+        &-title {
+          font-size: 2rem;
+          font-weight: 600;
+          color: var(--title-color);
+          margin-bottom: 1rem;
+        }
+        &-text {
+          color: #383738;
+          font-size: 1.5rem;
+        }
+      }
     }
     &-text {
       font-size: 1.3rem;
@@ -92,5 +117,38 @@
   font-weight: 600;
   span {
     color: var(--underline-color);
+  }
+}
+
+.program_selector {
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-hidden {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: absolute;
+    min-height: 18rem;
+    background-color: white;
+    top: 4.5rem;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    font-size: 1.6rem;
+    display: none;
+
+    div {
+      cursor: pointer;
+      transition: 0.3s;
+      padding: 0.5rem;
+      &:hover {
+        background-color: var(--background-color);
+      }
+    }
   }
 }
